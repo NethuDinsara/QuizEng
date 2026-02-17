@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechQuiz — ICT Knowledge Test</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Background decoration -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <div class="wrapper">
+
+    <!-- ░░ WELCOME SCREEN ░░ -->
+    <div class="screen" id="screen-welcome">
+      <div class="card card--welcome">
+        <div class="badge">ICT Fundamentals</div>
+        <h1 class="display-title">How well do you<br /><em>know your tech?</em></h1>
+        <p class="subtitle">10 questions covering Operating Systems, CPU, Storage, and core ICT concepts. Find out if you're a Beginner, Intermediate, or Advanced.</p>
+        <div class="meta-row">
+          <span class="meta-item"><span class="meta-icon">◎</span> 10 Questions</span>
+          <span class="meta-item"><span class="meta-icon">◈</span> Mixed Format</span>
+          <span class="meta-item"><span class="meta-icon">◉</span> Instant Results</span>
+        </div>
+        <button class="btn btn--primary" id="btn-start">Begin Quiz</button>
+      </div>
+    </div>
+
+    <!-- ░░ QUESTION SCREEN ░░ -->
+    <div class="screen hidden" id="screen-question">
+      <div class="card card--question">
+
+        <div class="progress-header">
+          <span class="q-counter" id="q-counter">Question 1 / 10</span>
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+        </div>
+
+        <div class="question-type-tag" id="q-type-tag">MCQ</div>
+        <h2 class="question-text" id="q-text"></h2>
+
+        <!-- MCQ Options -->
+        <div class="options-grid" id="options-container"></div>
+
+        <!-- Short Answer -->
+        <div class="short-answer-wrap hidden" id="short-answer-container">
+          <input
+            type="text"
+            class="short-input"
+            id="short-input"
+            placeholder="Type your answer here…"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <div class="short-hint" id="short-hint"></div>
+        </div>
+
+        <div class="card-footer">
+          <div class="answer-feedback hidden" id="answer-feedback">
+            <span class="feedback-icon" id="feedback-icon"></span>
+            <span class="feedback-text" id="feedback-text"></span>
+          </div>
+          <button class="btn btn--primary" id="btn-next" disabled>Next →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ░░ RESULT SCREEN ░░ -->
+    <div class="screen hidden" id="screen-result">
+      <div class="card card--result">
+        <div class="result-score-ring">
+          <svg viewBox="0 0 120 120" class="ring-svg">
+            <circle class="ring-bg" cx="60" cy="60" r="52" />
+            <circle class="ring-progress" id="ring-progress" cx="60" cy="60" r="52" />
+          </svg>
+          <div class="ring-label">
+            <span class="ring-number" id="result-score-pct">0%</span>
+            <span class="ring-sub" id="result-fraction"></span>
+          </div>
+        </div>
+
+        <div class="level-badge" id="level-badge">
+          <span class="level-dot"></span>
+          <span id="level-text">Beginner</span>
+        </div>
+
+        <p class="result-message" id="result-message"></p>
+
+        <div class="result-breakdown" id="result-breakdown"></div>
+
+        <button class="btn btn--primary" id="btn-restart">Try Again</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
