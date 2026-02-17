@@ -382,6 +382,213 @@ const questions = [
   options:["Accuracy","Small dataset","Reduce bits","Hardware"],
   answer:"Reduce bits",
   hint:"Lower precision weights."
+},
+{
+ type:"mcq",
+ question:"Vector in Machine Learning:",
+ options:["Image","Single number","List of numbers representing features","Database row"],
+ answer:"List of numbers representing features",
+ hint:"Represents data numerically."
+}
+,
+{
+ type:"mcq",
+ question:"Vectorization:",
+ options:["Converting code to C++","Turning text/data into vectors","Compressing files","Encrypting data"],
+ answer:"Turning text/data into vectors",
+ hint:"ML models only understand numbers."
+}
+,
+{
+ type:"mcq",
+ question:"Embedding:",
+ options:["Image resizing","Feature extraction into dense vectors","Sorting data","Model compression"],
+ answer:"Feature extraction into dense vectors",
+ hint:"Captures semantic meaning."
+}
+,
+{
+ type:"mcq",
+ question:"Supervised Learning:",
+ options:["No labels","Uses labeled data","Uses reinforcement","Random learning"],
+ answer:"Uses labeled data",
+ hint:"Input + output provided."
+}
+,
+{
+ type:"mcq",
+ question:"Unsupervised Learning:",
+ options:["Uses labeled data","Finds patterns without labels","Needs reward","Needs teacher"],
+ answer:"Finds patterns without labels",
+ hint:"Clustering."
+}
+,
+{
+ type:"mcq",
+ question:"Overfitting:",
+ options:["Model too simple","Model memorizes training data","Low accuracy","Under training"],
+ answer:"Model memorizes training data",
+ hint:"Poor test performance."
+}
+,
+{
+ type:"mcq",
+ question:"Underfitting:",
+ options:["Too complex","Too simple","High variance","Too many epochs"],
+ answer:"Too simple",
+ hint:"Can't learn patterns."
+}
+,
+{
+ type:"mcq",
+ question:"Epoch:",
+ options:["One prediction","One full pass over dataset","Loss value","Optimizer"],
+ answer:"One full pass over dataset",
+ hint:"Training cycle."
+}
+,
+{
+ type:"mcq",
+ question:"Learning Rate:",
+ options:["Speed of CPU","Step size during weight updates","Dataset size","Accuracy metric"],
+ answer:"Step size during weight updates",
+ hint:"Controls convergence."
+}
+,
+{
+ type:"mcq",
+ question:"Activation Function:",
+ options:["Stores weights","Adds non-linearity","Normalizes data","Reduces loss"],
+ answer:"Adds non-linearity",
+ hint:"Enables deep learning."
+},
+
+{
+ type:"mcq",
+ question:"Gradient Descent:",
+ options:["Data cleaning","Optimization algorithm","Loss function","Activation"],
+ answer:"Optimization algorithm",
+ hint:"Minimizes loss."
+},
+
+{
+ type:"mcq",
+ question:"Train/Test Split:",
+ options:["Model compression","Divide data for evaluation","Vector creation","Tokenization"],
+ answer:"Divide data for evaluation",
+ hint:"Check generalization."
+}
+,
+{
+ type:"mcq",
+ question:"Accuracy:",
+ options:["Loss","Correct predictions / total","Training time","Vector size"],
+ answer:"Correct predictions / total",
+ hint:"Basic metric."
+}
+,
+{
+ type:"mcq",
+ question:"Confusion Matrix:",
+ options:["Dataset","Performance table","Optimizer","Vector store"],
+ answer:"Performance table",
+ hint:"TP FP FN TN."
+}
+,
+{
+ type:"mcq",
+ question:"Python List:",
+ options:["Immutable","Ordered & mutable","Key value","Compiled"],
+ answer:"Ordered & mutable",
+ hint:"[] brackets."
+}
+,
+{
+ type:"mcq",
+ question:"Python Tuple:",
+ options:["Mutable","Unordered","Immutable","Dictionary"],
+ answer:"Immutable",
+ hint:"() brackets."
+}
+,
+{
+ type:"mcq",
+ question:"Dictionary:",
+ options:["Indexed","Key-value","Immutable","Sorted"],
+ answer:"Key-value",
+ hint:"Uses {}."
+}
+,
+{
+ type:"mcq",
+ question:"Lambda Function:",
+ options:["Loop","Anonymous function","Class","Decorator"],
+ answer:"Anonymous function",
+ hint:"Single line."
+}
+,
+{
+ type:"mcq",
+ question:"NumPy:",
+ options:["Web framework","Numerical computing","Database","IDE"],
+ answer:"Numerical computing",
+ hint:"Arrays + math."
+}
+,
+{
+ type:"mcq",
+ question:"Pandas:",
+ options:["Visualization","Data manipulation","Neural network","Compiler"],
+ answer:"Data manipulation",
+ hint:"DataFrames."
+}
+,
+{
+ type:"mcq",
+ question:"For Loop:",
+ options:["Conditional","Iteration","Exception","Class"],
+ answer:"Iteration",
+ hint:"Repeats code."
+}
+,
+{
+ type:"mcq",
+ question:"Exception Handling:",
+ options:["Loop","Debugging","Error control","Vectorization"],
+ answer:"Error control",
+ hint:"try/except."
+}
+,
+{
+ type:"mcq",
+ question:"Time Complexity:",
+ options:["Memory usage","Execution speed","Algorithm efficiency","Model size"],
+ answer:"Algorithm efficiency",
+ hint:"Big-O."
+}
+,
+{
+ type:"mcq",
+ question:"O(n):",
+ options:["Constant","Linear","Quadratic","Logarithmic"],
+ answer:"Linear",
+ hint:"Grows with input."
+}
+,
+{
+ type:"mcq",
+ question:"API:",
+ options:["Algorithm","Interface between systems","Dataset","Library"],
+ answer:"Interface between systems",
+ hint:"Communication layer."
+}
+,
+{
+ type:"mcq",
+ question:"REST:",
+ options:["Database","Web protocol style","Python package","ML model"],
+ answer:"Web protocol style",
+ hint:"Uses HTTP."
 }
 
 ];
