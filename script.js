@@ -13,89 +13,377 @@
      hint       string  (shown after short-answer reveal)
 ══════════════════════════════════════════ */
 const questions = [
-  // ── Operating Systems ──────────────────
-  {
-    type: "mcq",
-    question: "Which of the following is NOT an operating system?",
-    options: ["Ubuntu", "Windows 11", "Apache", "macOS"],
-    answer: "Apache",
-    hint: "Apache is a web server software, not an OS."
-  },
-  {
-    type: "short",
-    question: "What does OS stand for in computing?",
-    answer: "operating system",
-    hint: "It manages hardware and software resources on a computer."
-  },
-  {
-    type: "mcq",
-    question: "Which scheduling algorithm gives the shortest job the highest priority?",
-    options: ["FIFO", "Round Robin", "SJF (Shortest Job First)", "Priority Scheduling"],
-    answer: "SJF (Shortest Job First)",
-    hint: "SJF minimises average waiting time by running the shortest process next."
-  },
 
-  // ── CPU ────────────────────────────────
-  {
-    type: "mcq",
-    question: "What does ALU stand for inside a CPU?",
-    options: [
-      "Array Logic Unit",
-      "Arithmetic Logic Unit",
-      "Advanced Load Unit",
-      "Async Loop Utility"
-    ],
-    answer: "Arithmetic Logic Unit",
-    hint: "The ALU handles all arithmetic and logical operations in the CPU."
-  },
-  {
-    type: "short",
-    question: "In CPU terminology, what unit is used to measure clock speed?",
-    answer: "hertz",
-    hint: "Modern CPUs run at billions of cycles per second — GHz."
-  },
-  {
-    type: "mcq",
-    question: "Which component temporarily holds data the CPU is currently using?",
-    options: ["Hard Drive", "ROM", "RAM", "GPU"],
-    answer: "RAM",
-    hint: "RAM (Random Access Memory) provides fast, volatile working memory for the CPU."
-  },
+/* =======================
+   SECTION A — AI (10)
+======================= */
 
-  // ── Storage Devices ────────────────────
-  {
-    type: "mcq",
-    question: "Which storage type has NO moving mechanical parts?",
-    options: ["HDD", "CD-ROM", "Floppy Disk", "SSD"],
-    answer: "SSD",
-    hint: "Solid State Drives use flash memory chips, making them faster and more durable."
-  },
-  {
-    type: "short",
-    question: "What does HDD stand for?",
-    answer: "hard disk drive",
-    hint: "HDDs store data on spinning magnetic platters."
-  },
+{
+  type: "mcq",
+  question: "What is Artificial Intelligence?",
+  options: ["Hard-coded programs","Systems that mimic human intelligence","Database systems","Network protocols"],
+  answer: "Systems that mimic human intelligence",
+  hint: "AI aims to simulate human-like thinking and behavior."
+},
+{
+  type: "mcq",
+  question: "Which is NOT a type of AI?",
+  options: ["Narrow AI","General AI","Super AI","Linear AI"],
+  answer: "Linear AI",
+  hint: "Linear AI is not a standard AI category."
+},
+{
+  type: "mcq",
+  question: "Which search algorithm guarantees shortest path?",
+  options: ["DFS","BFS","Greedy","Hill Climbing"],
+  answer: "BFS",
+  hint: "Breadth First Search explores level by level."
+},
+{
+  type: "mcq",
+  question: "Which is an example of supervised learning?",
+  options: ["Clustering customers","Image labeling","Topic modeling","Market segmentation"],
+  answer: "Image labeling",
+  hint: "Supervised learning uses labeled data."
+},
+{
+  type: "mcq",
+  question: "What is an agent in AI?",
+  options: ["Database","Environment","Entity that perceives and acts","Reward"],
+  answer: "Entity that perceives and acts",
+  hint: "Agents sense environment and take actions."
+},
+{
+  type: "mcq",
+  question: "What does heuristic mean?",
+  options: ["Exact rule","Random guess","Approximate guiding function","Loss value"],
+  answer: "Approximate guiding function",
+  hint: "Heuristics guide search efficiently."
+},
+{
+  type: "mcq",
+  question: "Which is NOT part of RAG?",
+  options: ["Retrieve","Augment","Generate","Compile"],
+  answer: "Compile",
+  hint: "RAG = Retrieve + Augment + Generate."
+},
+{
+  type: "mcq",
+  question: "Vector databases mainly perform:",
+  options: ["Sorting","Similarity search","Compression","Encryption"],
+  answer: "Similarity search",
+  hint: "They retrieve semantically close vectors."
+},
+{
+  type: "mcq",
+  question: "What is RLHF?",
+  options: ["Reinforcement Learning with Human Feedback","Recursive Learning","Rule Learning","Regression Learning"],
+  answer: "Reinforcement Learning with Human Feedback",
+  hint: "Humans guide model behavior."
+},
+{
+  type: "mcq",
+  question: "Tokenization means:",
+  options: ["Encrypting data","Breaking text into pieces","Compressing models","Training networks"],
+  answer: "Breaking text into pieces",
+  hint: "Text is split into tokens."
+},
 
-  // ── Basic ICT Concepts ─────────────────
-  {
-    type: "mcq",
-    question: "What does URL stand for?",
-    options: [
-      "Uniform Resource Locator",
-      "Universal Remote Link",
-      "Unified Routing Layer",
-      "User Resource List"
-    ],
-    answer: "Uniform Resource Locator",
-    hint: "A URL is the web address used to locate a resource on the internet."
-  },
-  {
-    type: "short",
-    question: "What does LAN stand for in networking?",
-    answer: "local area network",
-    hint: "A LAN connects computers within a limited area like an office or school."
-  }
+/* =======================
+   SECTION B — ML (10)
+======================= */
+
+{
+  type: "mcq",
+  question: "Which is NOT ML type?",
+  options: ["Supervised","Unsupervised","Reinforced","Stored"],
+  answer: "Stored",
+  hint: "Stored is not an ML category."
+},
+{
+  type: "mcq",
+  question: "Overfitting means:",
+  options: ["Model too simple","Model memorizes training data","Model underperforms","Data shortage"],
+  answer: "Model memorizes training data",
+  hint: "Overfit = poor generalization."
+},
+{
+  type: "mcq",
+  question: "Which metric used for classification?",
+  options: ["MSE","RMSE","Accuracy","Variance"],
+  answer: "Accuracy",
+  hint: "Accuracy measures correct predictions."
+},
+{
+  type: "mcq",
+  question: "Gradient descent is used to:",
+  options: ["Increase loss","Minimize loss","Shuffle data","Encode text"],
+  answer: "Minimize loss",
+  hint: "Optimization algorithm."
+},
+{
+  type: "mcq",
+  question: "Which algorithm is used for clustering?",
+  options: ["Logistic Regression","K-Means","Linear Regression","Naive Bayes"],
+  answer: "K-Means",
+  hint: "Popular unsupervised clustering algorithm."
+},
+{
+  type: "mcq",
+  question: "What is a feature?",
+  options: ["Output","Input variable","Error","Weight"],
+  answer: "Input variable",
+  hint: "Features describe data."
+},
+{
+  type: "mcq",
+  question: "Train/test split purpose?",
+  options: ["Speed up model","Reduce memory","Evaluate performance","Compress data"],
+  answer: "Evaluate performance",
+  hint: "Testing checks generalization."
+},
+{
+  type: "mcq",
+  question: "Embeddings represent:",
+  options: ["Images only","Code only","Meaning as vectors","Labels"],
+  answer: "Meaning as vectors",
+  hint: "Semantic numerical representation."
+},
+{
+  type: "mcq",
+  question: "Bias–variance tradeoff means:",
+  options: ["Speed vs memory","Underfit vs overfit balance","Input vs output","CPU vs GPU"],
+  answer: "Underfit vs overfit balance",
+  hint: "Model complexity balance."
+},
+{
+  type: "mcq",
+  question: "Confusion matrix shows:",
+  options: ["Learning rate","Prediction breakdown","Loss curve","Weights"],
+  answer: "Prediction breakdown",
+  hint: "TP, FP, TN, FN."
+},
+
+/* =======================
+   SECTION C — PYTHON (10)
+======================= */
+
+{
+  type: "mcq",
+  question: "Output of print(type([]))?",
+  options: ["list","<class 'list'>","array","tuple"],
+  answer: "<class 'list'>",
+  hint: "Python prints class type."
+},
+{
+  type: "mcq",
+  question: "Which creates dictionary?",
+  options: ["[]","()","{}","<>"],
+  answer: "{}",
+  hint: "Curly braces."
+},
+{
+  type: "mcq",
+  question: "x=[1,2,3]; print(x[-1])",
+  options: ["1","2","3","Error"],
+  answer: "3",
+  hint: "Negative index = last element."
+},
+{
+  type: "mcq",
+  question: "Which loop runs at least once?",
+  options: ["for","while","do-while","repeat"],
+  answer: "do-while",
+  hint: "Executes before checking condition."
+},
+{
+  type: "mcq",
+  question: "What does len() do?",
+  options: ["Sort","Count elements","Reverse","Sum"],
+  answer: "Count elements",
+  hint: "Length of iterable."
+},
+{
+  type: "mcq",
+  question: "Mutable datatype?",
+  options: ["tuple","string","list","int"],
+  answer: "list",
+  hint: "Lists can be modified."
+},
+{
+  type: "mcq",
+  question: "print(5//2)",
+  options: ["2.5","2","3","Error"],
+  answer: "2",
+  hint: "Floor division."
+},
+{
+  type: "mcq",
+  question: "Used to handle exceptions?",
+  options: ["catch","try/except","error","handle"],
+  answer: "try/except",
+  hint: "Python exception handling."
+},
+{
+  type: "mcq",
+  question: "Time complexity of binary search?",
+  options: ["O(n)","O(n²)","O(log n)","O(1)"],
+  answer: "O(log n)",
+  hint: "Divide and conquer."
+},
+{
+  type: "mcq",
+  question: "Which avoids loops in ML?",
+  options: ["Iteration","Recursion","Vectorization","Compilation"],
+  answer: "Vectorization",
+  hint: "Operate on arrays directly."
+},
+
+/* =======================
+   LLM / RAG / RLHF (20)
+======================= */
+
+{
+  type:"mcq",
+  question:"Primary function of LLM?",
+  options:["Create images","Predict next token","Manage databases","Control robots"],
+  answer:"Predict next token",
+  hint:"Language modeling."
+},
+{
+  type:"mcq",
+  question:"Tokenization is:",
+  options:["Text to speech","Breaking text into tokens","Encryption","Translation"],
+  answer:"Breaking text into tokens",
+  hint:"Preprocessing step."
+},
+{
+  type:"mcq",
+  question:"Vectors represent meaning by:",
+  options:["Word length","Mapping in n-dimensional space","Alphabet order","Grammar"],
+  answer:"Mapping in n-dimensional space",
+  hint:"Semantic similarity."
+},
+{
+  type:"mcq",
+  question:"Attention helps by:",
+  options:["Speed","Context disambiguation","Reduce cost","Decode vectors"],
+  answer:"Context disambiguation",
+  hint:"Focus on relevant words."
+},
+{
+  type:"mcq",
+  question:"Self-supervised learning:",
+  options:["Human labels","Predict missing parts","Conversations","Bigger AI"],
+  answer:"Predict missing parts",
+  hint:"Model teaches itself."
+},
+{
+  type:"mcq",
+  question:"LLM vs Transformer:",
+  options:["Same","LLM algo","Transformer product","LLM product, transformer engine"],
+  answer:"LLM product, transformer engine",
+  hint:"Car vs engine analogy."
+},
+{
+  type:"mcq",
+  question:"Fine-tuning purpose:",
+  options:["Reduce size","General training","Specialize behavior","Multi-language"],
+  answer:"Specialize behavior",
+  hint:"Adapt base model."
+},
+{
+  type:"mcq",
+  question:"Few-shot prompting:",
+  options:["No context","Few examples","Small dataset","Simple language"],
+  answer:"Few examples",
+  hint:"Guide responses."
+},
+{
+  type:"mcq",
+  question:"RAG objective:",
+  options:["Speed","Diverse data","Augment with docs","Convert images"],
+  answer:"Augment with docs",
+  hint:"Retrieve + generate."
+},
+{
+  type:"mcq",
+  question:"Vector DB role:",
+  options:["Store videos","Audio","Semantic search","Encrypt"],
+  answer:"Semantic search",
+  hint:"Similarity retrieval."
+},
+{
+  type:"mcq",
+  question:"MCP role:",
+  options:["Compress","Connect tools","Ethics","Format text"],
+  answer:"Connect tools",
+  hint:"External actions."
+},
+{
+  type:"mcq",
+  question:"Context engineering:",
+  options:["Single prompt","Combine RAG + few-shot + MCP","Hardware","Train from scratch"],
+  answer:"Combine RAG + few-shot + MCP",
+  hint:"Whole context pipeline."
+},
+{
+  type:"mcq",
+  question:"AI Agent:",
+  options:["Small model","Long-running tool-using process","Human","Database"],
+  answer:"Long-running tool-using process",
+  hint:"Goal driven."
+},
+{
+  type:"mcq",
+  question:"RLHF trains via:",
+  options:["Scores","Rules","No humans","Hardcode"],
+  answer:"Scores",
+  hint:"+1 / -1."
+},
+{
+  type:"mcq",
+  question:"Chain of Thought:",
+  options:["Direct answer","Step-by-step","Guessing","Simple only"],
+  answer:"Step-by-step",
+  hint:"Reasoning traces."
+},
+{
+  type:"mcq",
+  question:"Reasoning model:",
+  options:["Basic math","Step solving","Art","Human only"],
+  answer:"Step solving",
+  hint:"Tool + logic."
+},
+{
+  type:"mcq",
+  question:"Multi-modal models:",
+  options:["Text only","Text + image + video","Numbers","Translation"],
+  answer:"Text + image + video",
+  hint:"Multiple inputs."
+},
+{
+  type:"mcq",
+  question:"SLMs:",
+  options:["Bigger","Smaller","General","Always better"],
+  answer:"Smaller",
+  hint:"Fewer params."
+},
+{
+  type:"mcq",
+  question:"Distillation:",
+  options:["Small teaches big","Big teaches small","Merge models","Clean data"],
+  answer:"Big teaches small",
+  hint:"Teacher → student."
+},
+{
+  type:"mcq",
+  question:"Quantization:",
+  options:["Accuracy","Small dataset","Reduce bits","Hardware"],
+  answer:"Reduce bits",
+  hint:"Lower precision weights."
+}
+
 ];
 
 /* ══════════════════════════════════════════
