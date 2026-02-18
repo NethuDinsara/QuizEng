@@ -14,79 +14,84 @@
 ══════════════════════════════════════════ */
 const questions = [
 
-/* =======================
-   SECTION A — AI (10)
-======================= */
-
 {
-  type: "mcq",
-  question: "What is Artificial Intelligence?",
-  options: ["Hard-coded programs","Systems that mimic human intelligence","Database systems","Network protocols"],
-  answer: "Systems that mimic human intelligence",
-  hint: "AI aims to simulate human-like thinking and behavior."
-},
+type:"mcq",
+question:"Large Language Model:",
+options:["Image generator","Next token predictor","Database","Robot controller"],
+answer:"Next token predictor",
+hint:"Predicts sequence."
+}
+,
 {
-  type: "mcq",
-  question: "Which is NOT a type of AI?",
-  options: ["Narrow AI","General AI","Super AI","Linear AI"],
-  answer: "Linear AI",
-  hint: "Linear AI is not a standard AI category."
-},
+type:"mcq",
+question:"Tokenization:",
+options:["Speech","Split text into tokens","Encrypt","Translate"],
+answer:"Split text into tokens",
+hint:"Breaks text."
+}
+,
 {
-  type: "mcq",
-  question: "Which search algorithm guarantees shortest path?",
-  options: ["DFS","BFS","Greedy","Hill Climbing"],
-  answer: "BFS",
-  hint: "Breadth First Search explores level by level."
-},
+type:"mcq",
+question:"Vector meaning:",
+options:["Alphabet","Length","Semantic position","Grammar"],
+answer:"Semantic position",
+hint:"Meaning space."
+}
+,
 {
-  type: "mcq",
-  question: "Which is an example of supervised learning?",
-  options: ["Clustering customers","Image labeling","Topic modeling","Market segmentation"],
-  answer: "Image labeling",
-  hint: "Supervised learning uses labeled data."
-},
+type:"mcq",
+question:"Attention:",
+options:["Speed","Context focus","Compression","Decode"],
+answer:"Context focus",
+hint:"Nearby words."
+}
+,
 {
-  type: "mcq",
-  question: "What is an agent in AI?",
-  options: ["Database","Environment","Entity that perceives and acts","Reward"],
-  answer: "Entity that perceives and acts",
-  hint: "Agents sense environment and take actions."
-},
+type:"mcq",
+question:"Self-supervised learning:",
+options:["Manual labels","Predict missing parts","Human chat","Another AI"],
+answer:"Predict missing parts",
+hint:"Auto labels."
+}
+,
 {
-  type: "mcq",
-  question: "What does heuristic mean?",
-  options: ["Exact rule","Random guess","Approximate guiding function","Loss value"],
-  answer: "Approximate guiding function",
-  hint: "Heuristics guide search efficiently."
-},
+type:"mcq",
+question:"Transformer:",
+options:["Product","Storage","Neural architecture","Database"],
+answer:"Neural architecture",
+hint:"Core model."
+}
+,
 {
-  type: "mcq",
-  question: "Which is NOT part of RAG?",
-  options: ["Retrieve","Augment","Generate","Compile"],
-  answer: "Compile",
-  hint: "RAG = Retrieve + Augment + Generate."
-},
+type:"mcq",
+question:"Fine tuning:",
+options:["Shrink model","General training","Task adaptation","Language add"],
+answer:"Task adaptation",
+hint:"Specialization."
+}
+,
 {
-  type: "mcq",
-  question: "Vector databases mainly perform:",
-  options: ["Sorting","Similarity search","Compression","Encryption"],
-  answer: "Similarity search",
-  hint: "They retrieve semantically close vectors."
-},
+type:"mcq",
+question:"Few-shot prompting:",
+options:["No examples","Few examples","Small dataset","Simple English"],
+answer:"Few examples",
+hint:"Guide output."
+}
+,
 {
-  type: "mcq",
-  question: "What is RLHF?",
-  options: ["Reinforcement Learning with Human Feedback","Recursive Learning","Rule Learning","Regression Learning"],
-  answer: "Reinforcement Learning with Human Feedback",
-  hint: "Humans guide model behavior."
-},
+type:"mcq",
+question:"RAG:",
+options:["Speed","More data","External knowledge","Images"],
+answer:"External knowledge",
+hint:"Retrieve + generate."
+}
+,
 {
-  type: "mcq",
-  question: "Tokenization means:",
-  options: ["Encrypting data","Breaking text into pieces","Compressing models","Training networks"],
-  answer: "Breaking text into pieces",
-  hint: "Text is split into tokens."
+type:"mcq",
+question:"Vector database:",
+options:["Images","Audio","Semantic search","Encryption"],
+answer:"Semantic search",
+hint:"Similarity."
 },
 
 /* =======================
@@ -94,149 +99,167 @@ const questions = [
 ======================= */
 
 {
-  type: "mcq",
-  question: "Which is NOT ML type?",
-  options: ["Supervised","Unsupervised","Reinforced","Stored"],
-  answer: "Stored",
-  hint: "Stored is not an ML category."
-},
+type:"mcq",
+question:"Supervised learning:",
+options:["No labels","With labels","Reward","Random"],
+answer:"With labels",
+hint:"Input + output."
+}
+,
 {
-  type: "mcq",
-  question: "Overfitting means:",
-  options: ["Model too simple","Model memorizes training data","Model underperforms","Data shortage"],
-  answer: "Model memorizes training data",
-  hint: "Overfit = poor generalization."
-},
+type:"mcq",
+question:"Unsupervised learning:",
+options:["Labels","Patterns","Reward","Teacher"],
+answer:"Patterns",
+hint:"No output."
+}
+,
 {
-  type: "mcq",
-  question: "Which metric used for classification?",
-  options: ["MSE","RMSE","Accuracy","Variance"],
-  answer: "Accuracy",
-  hint: "Accuracy measures correct predictions."
-},
+type:"mcq",
+question:"Regression:",
+options:["Categories","Continuous values","Clustering","Ranking"],
+answer:"Continuous values",
+hint:"Numbers."
+}
+,
 {
-  type: "mcq",
-  question: "Gradient descent is used to:",
-  options: ["Increase loss","Minimize loss","Shuffle data","Encode text"],
-  answer: "Minimize loss",
-  hint: "Optimization algorithm."
-},
+type:"mcq",
+question:"Classification:",
+options:["Numbers","Groups","Sorting","Ranking"],
+answer:"Groups",
+hint:"Discrete."
+}
+,
 {
-  type: "mcq",
-  question: "Which algorithm is used for clustering?",
-  options: ["Logistic Regression","K-Means","Linear Regression","Naive Bayes"],
-  answer: "K-Means",
-  hint: "Popular unsupervised clustering algorithm."
-},
+type:"mcq",
+question:"Overfitting:",
+options:["Simple","Memorization","Low acc","Few epochs"],
+answer:"Memorization",
+hint:"Bad generalization."
+}
+,
 {
-  type: "mcq",
-  question: "What is a feature?",
-  options: ["Output","Input variable","Error","Weight"],
-  answer: "Input variable",
-  hint: "Features describe data."
-},
+type:"mcq",
+question:"Underfitting:",
+options:["Complex","Too simple","High variance","Long training"],
+answer:"Too simple",
+hint:"Miss patterns."
+}
+,
 {
-  type: "mcq",
-  question: "Train/test split purpose?",
-  options: ["Speed up model","Reduce memory","Evaluate performance","Compress data"],
-  answer: "Evaluate performance",
-  hint: "Testing checks generalization."
-},
+type:"mcq",
+question:"Train-test split:",
+options:["Compress","Evaluate","Embed","Tokenize"],
+answer:"Evaluate",
+hint:"Validation."
+}
+,
 {
-  type: "mcq",
-  question: "Embeddings represent:",
-  options: ["Images only","Code only","Meaning as vectors","Labels"],
-  answer: "Meaning as vectors",
-  hint: "Semantic numerical representation."
-},
+type:"mcq",
+question:"Bias:",
+options:["Noise","Error from assumptions","Speed","Memory"],
+answer:"Error from assumptions",
+hint:"Wrong model."
+}
+,
 {
-  type: "mcq",
-  question: "Bias–variance tradeoff means:",
-  options: ["Speed vs memory","Underfit vs overfit balance","Input vs output","CPU vs GPU"],
-  answer: "Underfit vs overfit balance",
-  hint: "Model complexity balance."
-},
+type:"mcq",
+question:"Variance:",
+options:["Over sensitivity","Memory","Speed","Accuracy"],
+answer:"Over sensitivity",
+hint:"Overfitting."
+}
+,
 {
-  type: "mcq",
-  question: "Confusion matrix shows:",
-  options: ["Learning rate","Prediction breakdown","Loss curve","Weights"],
-  answer: "Prediction breakdown",
-  hint: "TP, FP, TN, FN."
-},
-
+type:"mcq",
+question:"Accuracy:",
+options:["Loss","Correct/Total","Speed","Epoch"],
+answer:"Correct/Total",
+hint:"Metric."
+}
+,
 /* =======================
    SECTION C — PYTHON (10)
 ======================= */
 
 {
-  type: "mcq",
-  question: "Output of print(type([]))?",
-  options: ["list","<class 'list'>","array","tuple"],
-  answer: "<class 'list'>",
-  hint: "Python prints class type."
-},
+type:"mcq",
+question:"Neuron:",
+options:["CPU","Math unit","Database","API"],
+answer:"Math unit",
+hint:"Weighted sum."
+}
+,
 {
-  type: "mcq",
-  question: "Which creates dictionary?",
-  options: ["[]","()","{}","<>"],
-  answer: "{}",
-  hint: "Curly braces."
-},
+type:"mcq",
+question:"Activation function:",
+options:["Store","Non-linearity","Normalize","Reduce loss"],
+answer:"Non-linearity",
+hint:"Adds complexity."
+}
+,
 {
-  type: "mcq",
-  question: "x=[1,2,3]; print(x[-1])",
-  options: ["1","2","3","Error"],
-  answer: "3",
-  hint: "Negative index = last element."
-},
+type:"mcq",
+question:"Epoch:",
+options:["Step","Full dataset pass","Loss","Batch"],
+answer:"Full dataset pass",
+hint:"Training cycle."
+}
+,
 {
-  type: "mcq",
-  question: "Which loop runs at least once?",
-  options: ["for","while","do-while","repeat"],
-  answer: "do-while",
-  hint: "Executes before checking condition."
-},
+type:"mcq",
+question:"Batch size:",
+options:["LR","Samples per update","Loss","Epoch"],
+answer:"Samples per update",
+hint:"Mini group."
+}
+,
 {
-  type: "mcq",
-  question: "What does len() do?",
-  options: ["Sort","Count elements","Reverse","Sum"],
-  answer: "Count elements",
-  hint: "Length of iterable."
-},
+type:"mcq",
+question:"Gradient descent:",
+options:["Cleaning","Optimizer","Metric","Embedding"],
+answer:"Optimizer",
+hint:"Minimize loss."
+}
+,
 {
-  type: "mcq",
-  question: "Mutable datatype?",
-  options: ["tuple","string","list","int"],
-  answer: "list",
-  hint: "Lists can be modified."
-},
+type:"mcq",
+question:"Learning rate:",
+options:["CPU speed","Step size","Accuracy","Memory"],
+answer:"Step size",
+hint:"Update size."
+}
+,
 {
-  type: "mcq",
-  question: "print(5//2)",
-  options: ["2.5","2","3","Error"],
-  answer: "2",
-  hint: "Floor division."
-},
+type:"mcq",
+question:"Loss function:",
+options:["Metric","Error value","Optimizer","Vector"],
+answer:"Error value",
+hint:"Training signal."
+}
+,
 {
-  type: "mcq",
-  question: "Used to handle exceptions?",
-  options: ["catch","try/except","error","handle"],
-  answer: "try/except",
-  hint: "Python exception handling."
-},
+type:"mcq",
+question:"Backpropagation:",
+options:["Forward pass","Weight update","Inference","Embedding"],
+answer:"Weight update",
+hint:"Gradient flow."
+}
+,
 {
-  type: "mcq",
-  question: "Time complexity of binary search?",
-  options: ["O(n)","O(n²)","O(log n)","O(1)"],
-  answer: "O(log n)",
-  hint: "Divide and conquer."
-},
+type:"mcq",
+question:"Dropout:",
+options:["Speed","Prevent overfit","Compress","Tokenize"],
+answer:"Prevent overfit",
+hint:"Random neurons."
+}
+,
 {
-  type: "mcq",
-  question: "Which avoids loops in ML?",
-  options: ["Iteration","Recursion","Vectorization","Compilation"],
-  answer: "Vectorization",
-  hint: "Operate on arrays directly."
+type:"mcq",
+question:"CNN:",
+options:["Text","Images","Audio","Database"],
+answer:"Images",
+hint:"Convolutions."
 },
 
 /* =======================
@@ -244,351 +267,242 @@ const questions = [
 ======================= */
 
 {
-  type:"mcq",
-  question:"Primary function of LLM?",
-  options:["Create images","Predict next token","Manage databases","Control robots"],
-  answer:"Predict next token",
-  hint:"Language modeling."
-},
-{
-  type:"mcq",
-  question:"Tokenization is:",
-  options:["Text to speech","Breaking text into tokens","Encryption","Translation"],
-  answer:"Breaking text into tokens",
-  hint:"Preprocessing step."
-},
-{
-  type:"mcq",
-  question:"Vectors represent meaning by:",
-  options:["Word length","Mapping in n-dimensional space","Alphabet order","Grammar"],
-  answer:"Mapping in n-dimensional space",
-  hint:"Semantic similarity."
-},
-{
-  type:"mcq",
-  question:"Attention helps by:",
-  options:["Speed","Context disambiguation","Reduce cost","Decode vectors"],
-  answer:"Context disambiguation",
-  hint:"Focus on relevant words."
-},
-{
-  type:"mcq",
-  question:"Self-supervised learning:",
-  options:["Human labels","Predict missing parts","Conversations","Bigger AI"],
-  answer:"Predict missing parts",
-  hint:"Model teaches itself."
-},
-{
-  type:"mcq",
-  question:"LLM vs Transformer:",
-  options:["Same","LLM algo","Transformer product","LLM product, transformer engine"],
-  answer:"LLM product, transformer engine",
-  hint:"Car vs engine analogy."
-},
-{
-  type:"mcq",
-  question:"Fine-tuning purpose:",
-  options:["Reduce size","General training","Specialize behavior","Multi-language"],
-  answer:"Specialize behavior",
-  hint:"Adapt base model."
-},
-{
-  type:"mcq",
-  question:"Few-shot prompting:",
-  options:["No context","Few examples","Small dataset","Simple language"],
-  answer:"Few examples",
-  hint:"Guide responses."
-},
-{
-  type:"mcq",
-  question:"RAG objective:",
-  options:["Speed","Diverse data","Augment with docs","Convert images"],
-  answer:"Augment with docs",
-  hint:"Retrieve + generate."
-},
-{
-  type:"mcq",
-  question:"Vector DB role:",
-  options:["Store videos","Audio","Semantic search","Encrypt"],
-  answer:"Semantic search",
-  hint:"Similarity retrieval."
-},
-{
-  type:"mcq",
-  question:"MCP role:",
-  options:["Compress","Connect tools","Ethics","Format text"],
-  answer:"Connect tools",
-  hint:"External actions."
-},
-{
-  type:"mcq",
-  question:"Context engineering:",
-  options:["Single prompt","Combine RAG + few-shot + MCP","Hardware","Train from scratch"],
-  answer:"Combine RAG + few-shot + MCP",
-  hint:"Whole context pipeline."
-},
-{
-  type:"mcq",
-  question:"AI Agent:",
-  options:["Small model","Long-running tool-using process","Human","Database"],
-  answer:"Long-running tool-using process",
-  hint:"Goal driven."
-},
-{
-  type:"mcq",
-  question:"RLHF trains via:",
-  options:["Scores","Rules","No humans","Hardcode"],
-  answer:"Scores",
-  hint:"+1 / -1."
-},
-{
-  type:"mcq",
-  question:"Chain of Thought:",
-  options:["Direct answer","Step-by-step","Guessing","Simple only"],
-  answer:"Step-by-step",
-  hint:"Reasoning traces."
-},
-{
-  type:"mcq",
-  question:"Reasoning model:",
-  options:["Basic math","Step solving","Art","Human only"],
-  answer:"Step solving",
-  hint:"Tool + logic."
-},
-{
-  type:"mcq",
-  question:"Multi-modal models:",
-  options:["Text only","Text + image + video","Numbers","Translation"],
-  answer:"Text + image + video",
-  hint:"Multiple inputs."
-},
-{
-  type:"mcq",
-  question:"SLMs:",
-  options:["Bigger","Smaller","General","Always better"],
-  answer:"Smaller",
-  hint:"Fewer params."
-},
-{
-  type:"mcq",
-  question:"Distillation:",
-  options:["Small teaches big","Big teaches small","Merge models","Clean data"],
-  answer:"Big teaches small",
-  hint:"Teacher → student."
-},
-{
-  type:"mcq",
-  question:"Quantization:",
-  options:["Accuracy","Small dataset","Reduce bits","Hardware"],
-  answer:"Reduce bits",
-  hint:"Lower precision weights."
-},
-{
- type:"mcq",
- question:"Vector in Machine Learning:",
- options:["Image","Single number","List of numbers representing features","Database row"],
- answer:"List of numbers representing features",
- hint:"Represents data numerically."
+type:"mcq",
+question:"Embedding:",
+options:["Resize","Dense vectors","Sort","Zip"],
+answer:"Dense vectors",
+hint:"Semantic."
 }
 ,
 {
- type:"mcq",
- question:"Vectorization:",
- options:["Converting code to C++","Turning text/data into vectors","Compressing files","Encrypting data"],
- answer:"Turning text/data into vectors",
- hint:"ML models only understand numbers."
+type:"mcq",
+question:"Vectorization:",
+options:["Encrypt","Convert to numbers","Compile","Cache"],
+answer:"Convert to numbers",
+hint:"ML input."
 }
 ,
 {
- type:"mcq",
- question:"Embedding:",
- options:["Image resizing","Feature extraction into dense vectors","Sorting data","Model compression"],
- answer:"Feature extraction into dense vectors",
- hint:"Captures semantic meaning."
+type:"mcq",
+question:"Cosine similarity:",
+options:["Distance","Angle similarity","Loss","Accuracy"],
+answer:"Angle similarity",
+hint:"Vector match."
 }
 ,
 {
- type:"mcq",
- question:"Supervised Learning:",
- options:["No labels","Uses labeled data","Uses reinforcement","Random learning"],
- answer:"Uses labeled data",
- hint:"Input + output provided."
+type:"mcq",
+question:"Agent:",
+options:["Model","Long running AI","Database","Prompt"],
+answer:"Long running AI",
+hint:"Uses tools."
 }
 ,
 {
- type:"mcq",
- question:"Unsupervised Learning:",
- options:["Uses labeled data","Finds patterns without labels","Needs reward","Needs teacher"],
- answer:"Finds patterns without labels",
- hint:"Clustering."
+type:"mcq",
+question:"RLHF:",
+options:["Manual code","Human scoring","Auto train","Hard rules"],
+answer:"Human scoring",
+hint:"Preference."
 }
 ,
 {
- type:"mcq",
- question:"Overfitting:",
- options:["Model too simple","Model memorizes training data","Low accuracy","Under training"],
- answer:"Model memorizes training data",
- hint:"Poor test performance."
+type:"mcq",
+question:"Chain of Thought:",
+options:["Direct","Step reasoning","Random","Guess"],
+answer:"Step reasoning",
+hint:"Intermediate steps."
 }
 ,
 {
- type:"mcq",
- question:"Underfitting:",
- options:["Too complex","Too simple","High variance","Too many epochs"],
- answer:"Too simple",
- hint:"Can't learn patterns."
+type:"mcq",
+question:"Quantization:",
+options:["Accuracy","Small dataset","Reduce bits","Hardware"],
+answer:"Reduce bits",
+hint:"Lower precision."
 }
 ,
 {
- type:"mcq",
- question:"Epoch:",
- options:["One prediction","One full pass over dataset","Loss value","Optimizer"],
- answer:"One full pass over dataset",
- hint:"Training cycle."
+type:"mcq",
+question:"Distillation:",
+options:["Small→big","Big→small","Merge","Delete"],
+answer:"Big→small",
+hint:"Teacher-student."
 }
 ,
 {
- type:"mcq",
- question:"Learning Rate:",
- options:["Speed of CPU","Step size during weight updates","Dataset size","Accuracy metric"],
- answer:"Step size during weight updates",
- hint:"Controls convergence."
+type:"mcq",
+question:"SLM:",
+options:["Huge","Company specific","General","Random"],
+answer:"Company specific",
+hint:"Small models."
 }
 ,
 {
- type:"mcq",
- question:"Activation Function:",
- options:["Stores weights","Adds non-linearity","Normalizes data","Reduces loss"],
- answer:"Adds non-linearity",
- hint:"Enables deep learning."
+type:"mcq",
+question:"Context engineering:",
+options:["Prompt only","Combine RAG+tools","Hardware","Training"],
+answer:"Combine RAG+tools",
+hint:"Full pipeline."
+},
+{
+type:"mcq",
+question:"Python list:",
+options:["Immutable","Mutable","Key-value","Sorted"],
+answer:"Mutable",
+hint:"[]"
+}
+,
+{
+type:"mcq",
+question:"Tuple:",
+options:["Mutable","Immutable","Dict","Set"],
+answer:"Immutable",
+hint:"()"
+}
+,
+{
+type:"mcq",
+question:"Dictionary:",
+options:["Index","Key-value","List","Tuple"],
+answer:"Key-value",
+hint:"{}"
+}
+,
+{
+type:"mcq",
+question:"Lambda:",
+options:["Loop","Anonymous function","Class","Decorator"],
+answer:"Anonymous function",
+hint:"Inline."
+}
+,
+{
+type:"mcq",
+question:"NumPy:",
+options:["Web","Math arrays","DB","IDE"],
+answer:"Math arrays",
+hint:"Numerics."
+}
+,
+{
+type:"mcq",
+question:"Pandas:",
+options:["Plot","DataFrames","NN","Compiler"],
+answer:"DataFrames",
+hint:"Tables."
+}
+,
+{
+type:"mcq",
+question:"For loop:",
+options:["If","Repeat","Catch","Class"],
+answer:"Repeat",
+hint:"Iteration."
+}
+,
+{
+type:"mcq",
+question:"try/except:",
+options:["Loop","Error handling","Vector","Sort"],
+answer:"Error handling",
+hint:"Exceptions."
+}
+,
+{
+type:"mcq",
+question:"O(n):",
+options:["Const","Linear","Quad","Log"],
+answer:"Linear",
+hint:"Big-O."
+}
+,
+{
+type:"mcq",
+question:"API:",
+options:["Algo","Interface","Dataset","Library"],
+answer:"Interface",
+hint:"Communication."
 },
 
 {
- type:"mcq",
- question:"Gradient Descent:",
- options:["Data cleaning","Optimization algorithm","Loss function","Activation"],
- answer:"Optimization algorithm",
- hint:"Minimizes loss."
-},
-
-{
- type:"mcq",
- question:"Train/Test Split:",
- options:["Model compression","Divide data for evaluation","Vector creation","Tokenization"],
- answer:"Divide data for evaluation",
- hint:"Check generalization."
+type:"mcq",
+question:"Pipeline:",
+options:["Single model","End-to-end flow","Vector","Loss"],
+answer:"End-to-end flow",
+hint:"Stages."
 }
 ,
 {
- type:"mcq",
- question:"Accuracy:",
- options:["Loss","Correct predictions / total","Training time","Vector size"],
- answer:"Correct predictions / total",
- hint:"Basic metric."
+type:"mcq",
+question:"Inference:",
+options:["Training","Prediction","Loss","Vector"],
+answer:"Prediction",
+hint:"Model output."
 }
 ,
 {
- type:"mcq",
- question:"Confusion Matrix:",
- options:["Dataset","Performance table","Optimizer","Vector store"],
- answer:"Performance table",
- hint:"TP FP FN TN."
+type:"mcq",
+question:"Model deployment:",
+options:["Training","Serving model","Embedding","Tokenizing"],
+answer:"Serving model",
+hint:"Production."
 }
 ,
 {
- type:"mcq",
- question:"Python List:",
- options:["Immutable","Ordered & mutable","Key value","Compiled"],
- answer:"Ordered & mutable",
- hint:"[] brackets."
+type:"mcq",
+question:"Latency:",
+options:["Accuracy","Response time","Loss","Epoch"],
+answer:"Response time",
+hint:"Speed."
 }
 ,
 {
- type:"mcq",
- question:"Python Tuple:",
- options:["Mutable","Unordered","Immutable","Dictionary"],
- answer:"Immutable",
- hint:"() brackets."
+type:"mcq",
+question:"Hallucination:",
+options:["Crash","Fake info","Slow","Overfit"],
+answer:"Fake info",
+hint:"LLM error."
 }
 ,
 {
- type:"mcq",
- question:"Dictionary:",
- options:["Indexed","Key-value","Immutable","Sorted"],
- answer:"Key-value",
- hint:"Uses {}."
+type:"mcq",
+question:"Prompt injection:",
+options:["Speed","Security attack","Metric","Embedding"],
+answer:"Security attack",
+hint:"Manipulation."
 }
 ,
 {
- type:"mcq",
- question:"Lambda Function:",
- options:["Loop","Anonymous function","Class","Decorator"],
- answer:"Anonymous function",
- hint:"Single line."
+type:"mcq",
+question:"Feature engineering:",
+options:["UI","Input prep","Deployment","Token"],
+answer:"Input prep",
+hint:"Better signals."
 }
 ,
 {
- type:"mcq",
- question:"NumPy:",
- options:["Web framework","Numerical computing","Database","IDE"],
- answer:"Numerical computing",
- hint:"Arrays + math."
+type:"mcq",
+question:"Monitoring:",
+options:["Training","Track production","Vector","Token"],
+answer:"Track production",
+hint:"Observe."
 }
 ,
 {
- type:"mcq",
- question:"Pandas:",
- options:["Visualization","Data manipulation","Neural network","Compiler"],
- answer:"Data manipulation",
- hint:"DataFrames."
+type:"mcq",
+question:"Evaluation:",
+options:["Deploy","Measure model","Tokenize","Embed"],
+answer:"Measure model",
+hint:"Metrics."
 }
 ,
 {
- type:"mcq",
- question:"For Loop:",
- options:["Conditional","Iteration","Exception","Class"],
- answer:"Iteration",
- hint:"Repeats code."
-}
-,
-{
- type:"mcq",
- question:"Exception Handling:",
- options:["Loop","Debugging","Error control","Vectorization"],
- answer:"Error control",
- hint:"try/except."
-}
-,
-{
- type:"mcq",
- question:"Time Complexity:",
- options:["Memory usage","Execution speed","Algorithm efficiency","Model size"],
- answer:"Algorithm efficiency",
- hint:"Big-O."
-}
-,
-{
- type:"mcq",
- question:"O(n):",
- options:["Constant","Linear","Quadratic","Logarithmic"],
- answer:"Linear",
- hint:"Grows with input."
-}
-,
-{
- type:"mcq",
- question:"API:",
- options:["Algorithm","Interface between systems","Dataset","Library"],
- answer:"Interface between systems",
- hint:"Communication layer."
-}
-,
-{
- type:"mcq",
- question:"REST:",
- options:["Database","Web protocol style","Python package","ML model"],
- answer:"Web protocol style",
- hint:"Uses HTTP."
+type:"mcq",
+question:"MLOps:",
+options:["Only ML","Dev + ML","Database","Frontend"],
+answer:"Dev + ML",
+hint:"Lifecycle."
 }
 
 ];
