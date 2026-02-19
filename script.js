@@ -13,7 +13,259 @@
      hint       string  (shown after short-answer reveal)
 ══════════════════════════════════════════ */
 const questions = [
-
+  {
+    "type": "mcq",
+    "question": "Artificial intelligence is the ability of machines to:",
+    "options": ["Mimic human thinking and decision-making", "Only perform calculations", "Store data indefinitely", "Replace all human jobs"],
+    "answer": "Mimic human thinking and decision-making",
+    "hint": "AI simulates human intelligence for learning and problem-solving."
+  },
+  {
+    "type": "mcq",
+    "question": "What is the main difference between Weak AI and General AI?",
+    "options": ["Weak AI is task-specific; General AI performs any intellectual task", "Weak AI is superintelligent", "General AI is limited to memory", "No difference"],
+    "answer": "Weak AI is task-specific; General AI performs any intellectual task",
+    "hint": "Examples: Siri (Weak), human-like versatility (General)."
+  },
+  {
+    "type": "mcq",
+    "question": "Machine Learning is a subset of:",
+    "options": ["Deep Learning only", "Artificial Intelligence", "Robotics", "Databases"],
+    "answer": "Artificial Intelligence",
+    "hint": "ML enables machines to learn from data without explicit programming."
+  },
+  {
+    "type": "mcq",
+    "question": "Deep Learning differs from Machine Learning primarily in:",
+    "options": ["Using labeled data only", "Automatic feature extraction from raw data", "Requiring no neural networks", "Human-defined features always"],
+    "answer": "Automatic feature extraction from raw data",
+    "hint": "DL uses neural networks for hierarchies like edges to objects."
+  },
+  {
+    "type": "mcq",
+    "question": "What is an AI model?",
+    "options": ["A physical robot", "A mathematical representation learned from data", "A programming language", "Hardware component"],
+    "answer": "A mathematical representation learned from data",
+    "hint": "Models predict outputs based on inputs after training."
+  },
+  {
+    "type": "mcq",
+    "question": "In AI, input refers to:",
+    "options": ["Model predictions", "Data fed into the model", "Training labels", "Final output"],
+    "answer": "Data fed into the model",
+    "hint": "Output is what the model produces from inputs."
+  },
+  {
+    "type": "mcq",
+    "question": "Features in data are:",
+    "options": ["Raw unlabeled data", "Measurable properties used for predictions", "Model errors", "Training algorithms"],
+    "answer": "Measurable properties used for predictions",
+    "hint": "E.g., pixel values in images or age in user data."
+  },
+  {
+    "type": "mcq",
+    "question": "Training phase in ML involves:",
+    "options": ["Using model for predictions on new data", "Adjusting model parameters on dataset", "Deploying the model", "Deleting data"],
+    "answer": "Adjusting model parameters on dataset",
+    "hint": "Inference uses trained model on unseen data."
+  },
+  {
+    "type": "mcq",
+    "question": "A dataset is:",
+    "options": ["Single data point", "Collection of data examples for training/testing", "Model output", "Programming code"],
+    "answer": "Collection of data examples for training/testing",
+    "hint": "Split into train/validation/test sets."
+  },
+  {
+    "type": "mcq",
+    "question": "Labels in supervised learning are:",
+    "options": ["Input features", "Correct answers or targets for data", "Model weights", "Error metrics"],
+    "answer": "Correct answers or targets for data",
+    "hint": "E.g., 'cat' label for image input."
+  },
+  {
+    "type": "mcq",
+    "question": "Classification tasks predict:",
+    "options": ["Continuous values", "Discrete categories or classes", "Images only", "Text lengths"],
+    "answer": "Discrete categories or classes",
+    "hint": "E.g., spam/not spam; uses accuracy metrics."
+  },
+  {
+    "type": "mcq",
+    "question": "Regression tasks predict:",
+    "options": ["Categories", "Continuous numeric values", "Binary yes/no", "Images"],
+    "answer": "Continuous numeric values",
+    "hint": "E.g., house price; uses MSE/MAE."
+  },
+  {
+    "type": "mcq",
+    "question": "In Python, a variable is used to:",
+    "options": ["Store fixed data only", "Store data that can change", "Create loops", "Handle errors"],
+    "answer": "Store data that can change",
+    "hint": "E.g., x = 5; x is dynamic."
+  },
+  {
+    "type": "mcq",
+    "question": "Which is a mutable data type in Python?",
+    "options": ["String", "Tuple", "List", "Integer"],
+    "answer": "List",
+    "hint": "Lists can be modified after creation."
+  },
+  {
+    "type": "mcq",
+    "question": "A Python list is:",
+    "options": ["Unordered key-value pairs", "Ordered collection allowing duplicates", "Immutable sequence", "Single value"],
+    "answer": "Ordered collection allowing duplicates",
+    "hint": "E.g., my_list = [1, 2, 2]."
+  },
+  {
+    "type": "mcq",
+    "question": "Dictionary in Python stores:",
+    "options": ["Ordered items by index", "Key-value pairs, keys unique", "Only numbers", "Fixed size"],
+    "answer": "Key-value pairs, keys unique",
+    "hint": "E.g., {'name': 'Alice'}."
+  },
+  {
+    "type": "mcq",
+    "question": "A for loop in Python iterates over:",
+    "options": ["Only numbers", "Sequences like lists/strings", "Conditions only", "Functions"],
+    "answer": "Sequences like lists/strings",
+    "hint": "for item in my_list:."
+  },
+  {
+    "type": "mcq",
+    "question": "Functions in Python are defined with:",
+    "options": ["if", "for", "def", "while"],
+    "answer": "def",
+    "hint": "def my_func(): reusable code block."
+  },
+  {
+    "type": "mcq",
+    "question": "Conditionals use:",
+    "options": ["Loops", "if/elif/else", "Lists", "Dictionaries"],
+    "answer": "if/elif/else",
+    "hint": "For decision-making based on conditions."
+  },
+  {
+    "type": "mcq",
+    "question": "print() in Python:",
+    "options": ["Reads input", "Outputs to console", "Creates lists", "Handles errors"],
+    "answer": "Outputs to console",
+    "hint": "print('Hello World')."
+  },
+  {
+    "type": "mcq",
+    "question": "len() returns:",
+    "options": ["Item at index", "Length of sequence", "Data type", "Error"],
+    "answer": "Length of sequence",
+    "hint": "len([1,2,3]) == 3."
+  },
+  {
+    "type": "mcq",
+    "question": "List indexing starts at:",
+    "options": ["1", "0", "-1", "End"],
+    "answer": "0",
+    "hint": "my_list[0] gets first item."
+  },
+  {
+    "type": "mcq",
+    "question": "List operation 'append' does:",
+    "options": ["Remove last", "Add to end", "Insert at index", "Sort"],
+    "answer": "Add to end",
+    "hint": "my_list.append(4)."
+  },
+  {
+    "type": "mcq",
+    "question": "try/except handles:",
+    "options": ["Normal code flow", "Exceptions/errors gracefully", "Loops", "Variables"],
+    "answer": "Exceptions/errors gracefully",
+    "hint": "Prevents crashes on errors."
+  },
+  {
+    "type": "mcq",
+    "question": "PEAS in AI agent stands for:",
+    "options": ["Performance, Environment, Actuators, Sensors", "Programming, Execution, AI, Systems", "Python, Environment, Agents, States", "Planning, Execution, Adaptation, Search"],
+    "answer": "Performance, Environment, Actuators, Sensors",
+    "hint": "Framework for agent design."
+  },
+  {
+    "type": "mcq",
+    "question": "Reactive Machines AI has:",
+    "options": ["Long-term memory", "No memory of past", "Human emotions", "Self-awareness"],
+    "answer": "No memory of past",
+    "hint": "Responds only to present inputs."
+  },
+  {
+    "type": "mcq",
+    "question": "State space in AI is:",
+    "options": ["All possible problem states", "Single state", "Environment only", "Agent actions"],
+    "answer": "All possible problem states",
+    "hint": "Agent navigates within it."
+  },
+  {
+    "type": "mcq",
+    "question": "Utility-based agent aims to:",
+    "options": ["Meet goals only", "Maximize user preference", "Ignore environment", "Use minimal memory"],
+    "answer": "Maximize user preference",
+    "hint": "Beyond just reaching goals."
+  },
+  {
+    "type": "mcq",
+    "question": "In Python, while loop uses:",
+    "options": ["Fixed iterations", "Condition checked each time", "Sequences only", "Functions"],
+    "answer": "Condition checked each time",
+    "hint": "while condition:."
+  },
+  {
+    "type": "mcq",
+    "question": "List slicing my_list[1:3] gets:",
+    "options": ["First two items", "Items from index 1 to 2", "Last two", "All"],
+    "answer": "Items from index 1 to 2",
+    "hint": "Exclusive end index."
+  },
+  {
+    "type": "mcq",
+    "question": "Default function parameter uses:",
+    "options": ["=", ":", "def", "return"],
+    "answer": "=",
+    "hint": "def func(x=5):."
+  },
+  {
+    "type": "mcq",
+    "question": "Environment types in AI include:",
+    "options": ["Deterministic only", "Observable, static/dynamic, etc.", "Python only", "Data only"],
+    "answer": "Observable, static/dynamic, etc.",
+    "hint": "Fully/partial, episodic/sequential."
+  },
+  {
+    "type": "mcq",
+    "question": "Unsupervised learning uses:",
+    "options": ["Labels", "No labels, finds patterns", "Regression only", "Classification"],
+    "answer": "No labels, finds patterns",
+    "hint": "Contrast with supervised (labels)."
+  },
+  {
+    "type": "mcq",
+    "question": "Python dictionary access: my_dict['key']",
+    "options": ["Gets value", "Adds key", "Deletes", "Lists keys"],
+    "answer": "Gets value",
+    "hint": "KeyError if missing."
+  },
+  {
+    "type": "mcq",
+    "question": "raise exception in Python:",
+    "options": ["Ignores errors", "Triggers custom error", "Prints", "Loops"],
+    "answer": "Triggers custom error",
+    "hint": "Handled by try/except."
+  },
+  {
+    "type": "mcq",
+    "question": "Inference phase needs:",
+    "options": ["Retraining", "Trained model on new data", "Labels always", "New dataset"],
+    "answer": "Trained model on new data",
+    "hint": "Real-world predictions."
+  }
+,
 {
 type:"mcq",
 question:"Large Language Model:",
