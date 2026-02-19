@@ -266,6 +266,275 @@ const questions = [
     "hint": "Real-world predictions."
   }
 ,
+//phase 2: LLM 
+{
+    "type": "mcq",
+    "question": "Supervised learning uses:",
+    "options": ["No labels", "Labeled data for training", "Rewards only", "Clustering only"],
+    "answer": "Labeled data for training",
+    "hint": "Input-output pairs guide learning."
+  },
+  {
+    "type": "mcq",
+    "question": "Unsupervised learning deals with:",
+    "options": ["Labeled data", "Unlabeled data to find patterns", "Sequential decisions", "Predictions only"],
+    "answer": "Unlabeled data to find patterns",
+    "hint": "E.g., clustering, dimensionality reduction."
+  },
+  {
+    "type": "mcq",
+    "question": "Reinforcement learning involves:",
+    "options": ["Static labels", "Agent learning via rewards/punishments", "Batch training only", "No environment"],
+    "answer": "Agent learning via rewards/punishments",
+    "hint": "Trial-error in dynamic environments."
+  },
+  {
+    "type": "mcq",
+    "question": "Features are:",
+    "options": ["Target variables", "Input variables for model", "Model outputs", "Evaluation metrics"],
+    "answer": "Input variables for model",
+    "hint": "Attributes describing data points."
+  },
+  {
+    "type": "mcq",
+    "question": "Labels represent:",
+    "options": ["Input features", "True outputs/targets", "Test data only", "Hyperparameters"],
+    "answer": "True outputs/targets",
+    "hint": "Used in supervised learning."
+  },
+  {
+    "type": "mcq",
+    "question": "Training data is used to:",
+    "options": ["Evaluate final model", "Build and tune model parameters", "Only inference", "Validate splits"],
+    "answer": "Build and tune model parameters",
+    "hint": "Model learns from this."
+  },
+  {
+    "type": "mcq",
+    "question": "Test data assesses:",
+    "options": ["Training speed", "Model generalization on unseen data", "Feature selection", "Hyperparameter tuning"],
+    "answer": "Model generalization on unseen data",
+    "hint": "Held out until end."
+  },
+  {
+    "type": "mcq",
+    "question": "Train/test split ratio commonly is:",
+    "options": ["100/0", "80/20 or 70/30", "50/50 always", "No split needed"],
+    "answer": "80/20 or 70/30",
+    "hint": "Balances learning and evaluation."
+  },
+  {
+    "type": "mcq",
+    "question": "Model evaluation metrics include:",
+    "options": ["Only accuracy", "Accuracy, precision, recall, F1, MSE etc.", "Training time only", "Data size"],
+    "answer": "Accuracy, precision, recall, F1, MSE etc.",
+    "hint": "Task-specific choices."
+  },
+  {
+    "type": "mcq",
+    "question": "Overfitting occurs when:",
+    "options": ["Model too simple", "Model memorizes training data, poor on test", "Perfect generalization", "Low variance"],
+    "answer": "Model memorizes training data, poor on test",
+    "hint": "High training accuracy, low test."
+  },
+  {
+    "type": "mcq",
+    "question": "Underfitting happens due to:",
+    "options": ["Too complex model", "Model too simple, misses patterns", "Excess data", "No regularization"],
+    "answer": "Model too simple, misses patterns",
+    "hint": "Poor on both train/test."
+  },
+  {
+    "type": "mcq",
+    "question": "Bias in ML refers to:",
+    "options": ["Random errors", "Errors from wrong assumptions/simple models", "Data variance", "Overfitting"],
+    "answer": "Errors from wrong assumptions/simple models",
+    "hint": "High bias = underfitting."
+  },
+  {
+    "type": "mcq",
+    "question": "Variance is high when:",
+    "options": ["Model insensitive to data", "Model changes much with training data", "Low bias", "Simple model"],
+    "answer": "Model changes much with training data",
+    "hint": "High variance = overfitting."
+  },
+  {
+    "type": "mcq",
+    "question": "Generalization means:",
+    "options": ["Good on training only", "Performing well on unseen data", "Fast training", "Few features"],
+    "answer": "Performing well on unseen data",
+    "hint": "Goal of ML models."
+  },
+  {
+    "type": "mcq",
+    "question": "Linear Regression predicts:",
+    "options": ["Categories", "Continuous values via line fit", "Clusters", "Probabilities"],
+    "answer": "Continuous values via line fit",
+    "hint": "Minimizes MSE."
+  },
+  {
+    "type": "mcq",
+    "question": "Logistic Regression is for:",
+    "options": ["Continuous outputs", "Binary/multi-class classification", "Clustering", "Reinforcement"],
+    "answer": "Binary/multi-class classification",
+    "hint": "Uses sigmoid for probabilities."
+  },
+  {
+    "type": "mcq",
+    "question": "K-Means clustering is:",
+    "options": ["Supervised", "Unsupervised partitioning into K groups", "Regression", "Sequential"],
+    "answer": "Unsupervised partitioning into K groups",
+    "hint": "Minimizes intra-cluster variance."
+  },
+  {
+    "type": "mcq",
+    "question": "Naive Bayes assumes:",
+    "options": ["Feature dependence", "Features independent given class", "Linear relations", "No probabilities"],
+    "answer": "Features independent given class",
+    "hint": "Uses Bayes' theorem."
+  },
+  {
+    "type": "mcq",
+    "question": "Cross-validation helps combat:",
+    "options": ["Fast training", "Overfitting by multiple splits", "More data", "Simple models"],
+    "answer": "Overfitting by multiple splits",
+    "hint": "E.g., K-fold."
+  },
+  {
+    "type": "mcq",
+    "question": "Precision measures:",
+    "options": ["True positives / predicted positives", "True positives / actual positives", "All correct", "False negatives"],
+    "answer": "True positives / predicted positives",
+    "hint": "Avoids false positives."
+  },
+  {
+    "type": "mcq",
+    "question": "Recall is:",
+    "options": ["TP / (TP + FP)", "TP / (TP + FN)", "TN / total", "1 - accuracy"],
+    "answer": "TP / (TP + FN)",
+    "hint": "Captures all positives."
+  },
+  {
+    "type": "mcq",
+    "question": "Regularization like L1/L2 prevents:",
+    "options": ["Underfitting", "Overfitting by penalizing complexity", "Bias", "Variance reduction only"],
+    "answer": "Overfitting by penalizing complexity",
+    "hint": "Adds to loss function."
+  },
+  {
+    "type": "mcq",
+    "question": "Hyperparameters are:",
+    "options": ["Learned from data", "Set before training e.g. learning rate", "Labels", "Features"],
+    "answer": "Set before training e.g. learning rate",
+    "hint": "Tuned via validation."
+  },
+  {
+    "type": "mcq",
+    "question": "Validation set used for:",
+    "options": ["Final eval", "Hyperparameter tuning", "Training", "Inference"],
+    "answer": "Hyperparameter tuning",
+    "hint": "Separate from train/test."
+  },
+  {
+    "type": "mcq",
+    "question": "RMSE in regression is:",
+    "options": ["Square root of MSE", "Absolute mean error", "R-squared", "Accuracy"],
+    "answer": "Square root of MSE",
+    "hint": "Same units as target."
+  },
+  {
+    "type": "mcq",
+    "question": "K-Means requires predefined:",
+    "options": ["Labels", "Number of clusters K", "Regression line", "Probabilities"],
+    "answer": "Number of clusters K",
+    "hint": "Use elbow method to choose."
+  },
+  {
+    "type": "mcq",
+    "question": "Naive Bayes classifier is:",
+    "options": ["Probabilistic, generative", "Discriminative", "Clustering", "Regression"],
+    "answer": "Probabilistic, generative",
+    "hint": "Models P(class|features)."
+  },
+  {
+    "type": "mcq",
+    "question": "Curse of dimensionality affects:",
+    "options": ["Low-dim data", "High-dim data sparsity", "1D only", "Labels"],
+    "answer": "High-dim data sparsity",
+    "hint": "Needs feature selection."
+  },
+  {
+    "type": "mcq",
+    "question": "Ensemble methods combine:",
+    "options": ["Single model", "Multiple models to reduce variance", "Data only", "Features"],
+    "answer": "Multiple models to reduce variance",
+    "hint": "E.g., bagging, boosting."
+  },
+  {
+    "type": "mcq",
+    "question": "Learning curve plots:",
+    "options": ["Error vs data size", "Time only", "Features", "K values"],
+    "answer": "Error vs data size",
+    "hint": "Diagnoses over/underfitting."
+  },
+  {
+    "type": "mcq",
+    "question": "Logistic function outputs:",
+    "options": ["0 to infinity", "0 to 1 probabilities", "-1 to 1", "Classes directly"],
+    "answer": "0 to 1 probabilities",
+    "hint": "Sigmoid shape."
+  },
+  {
+    "type": "mcq",
+    "question": "Silhouette score evaluates:",
+    "options": ["Regression", "Clustering quality", "Classification", "RL rewards"],
+    "answer": "Clustering quality",
+    "hint": "-1 to 1, higher better."
+  },
+  {
+    "type": "mcq",
+    "question": "Feature scaling is important for:",
+    "options": ["Distance-based algos like K-Means", "All only", "Labels", "No effect"],
+    "answer": "Distance-based algos like K-Means",
+    "hint": "E.g., standardization."
+  },
+  {
+    "type": "mcq",
+    "question": "Semi-supervised learning uses:",
+    "options": ["All labeled", "Mostly unlabeled + some labeled", "Rewards", "No data"],
+    "answer": "Mostly unlabeled + some labeled",
+    "hint": "Leverages cheap unlabeled data."
+  },
+  {
+    "type": "mcq",
+    "question": "Q-learning is part of:",
+    "options": ["Supervised", "Reinforcement model-free", "Clustering", "Regression"],
+    "answer": "Reinforcement model-free",
+    "hint": "Learns action-value function."
+  },
+  {
+    "type": "mcq",
+    "question": "R-squared measures:",
+    "options": ["Error", "Variance explained by model", "Bias", "Clusters"],
+    "answer": "Variance explained by model",
+    "hint": "0 to 1, higher better."
+  },
+  {
+    "type": "mcq",
+    "question": "Early stopping prevents:",
+    "options": ["Underfitting", "Overfitting during training", "Fast convergence", "Data split"],
+    "answer": "Overfitting during training",
+    "hint": "Monitors validation loss."
+  },
+  {
+    "type": "mcq",
+    "question": "One-hot encoding for:",
+    "options": ["Continuous features", "Categorical to binary vectors", "Images", "Time series"],
+    "answer": "Categorical to binary vectors",
+    "hint": "Avoids ordinal assumptions."
+  },
+
+  
 {
 type:"mcq",
 question:"Large Language Model:",
