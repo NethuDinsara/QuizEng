@@ -20,8 +20,8 @@ const questions = [
       "Elimination of the need to perform security auditing",
       "Increased global reach and agility",
       "Ability to deploy globally in minutes",
-      "Elimination of the cost of IT staff members",
-      "Redundancy by default for all compute services"
+      "Elimination of the cost of IT staff members"
+      // ,"Redundancy by default for all compute services"
     ],
     "answer": "Increased global reach and agility, Ability to deploy globally in minutes",
     "hint": "Trade fixed expense for variable, economies of scale, go global in minutes."
